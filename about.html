@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .parallax {
+            background-image: url('https://static01.nyt.com/images/2020/10/29/style/28MOON-01/oakImage-1603985177355-superJumbo.jpg'); /* Replace with your image */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        header h1 {
+            font-size: 36px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 24px;
+            color: #3498db;
+        }
+        p {
+            font-size: 18px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+    <script>
+        // Parallax scrolling effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.parallax');
+            header.style.backgroundPositionY = -window.scrollY * 0.5 + 'px';
+        });
+    </script>
+</head>
+<body>
+    <div class="parallax">
+        <header>
+            <h1>About Me</h1>
+        </header>
+    </div>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qnnVQDJKxCMKG-jLN6yQwNJaB6UtbmKI9g&usqp=CAU" alt="Thomson Stanes">
+        <h2>Background</h2>
+        <p>Hello! I'm Thomson, and this is my "About Me" page. Here's a little bit about me:</p>
+
+        <h2>Education</h2>
+        <p>I graduated from St. Joseph's College of Engineering and Technology, Palai  with a degree in bachelor's in computer science and engineering.</p>
+
+        <h2>Skills</h2>
+        <p>Some of my key skills include:</p>
+        <ul>
+            <li>Making Ideas Clear</li>
+            <li>A Fast Learner</li>
+            <li>Good At Solving Problems</li>
+            
+        </ul>
+
+        <h2>Interests</h2>
+        <p>In my free time, I enjoy Travelling. I'm also a good gamer.</p>
+
+        <h2>Contact</h2>
+        <p>You can reach me at thomsonstanesdelta@gmail.com or connect with me on LinkedIn.</p>
+    </div>
+</body>
+</html>
